@@ -1,0 +1,195 @@
+/* add custom font located at font folder*/
+@font-face {
+  font-family: spotify;
+  src: url("../font/GothamBold.ttf");
+}
+@font-face {
+  font-family: silent;
+  src: url("../font/SilentDream.ttf");
+}
+@font-face {
+  font-family: note;
+  src: url("../font/NoteThis.ttf");
+}
+
+/*set scroll behaviour to smooth for future anchor links if needed*/
+html{
+  scroll-behavior: smooth;
+}
+
+/*body background, margin and padding*/
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(40,40,40,255);
+}
+
+/*fixed navbar with 15vh, background color, slow transition, font style and color */
+nav {
+  height: 15vh;
+  max-height: 15vh;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  display: table;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(40,40,40,255);
+  transition: 2s;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.493);
+  font-family: spotify;
+  color: rgb(207, 203, 198);
+}
+
+/*the two divs inside navbar*/
+.nav-div {
+  height: 100%;
+  width: 33.33%;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+/* set font size for the div with the name of the lyrics*/
+.nav-div1{
+  font-size: 1.5em;
+}
+
+/*active by javascript when page is scrolled, add border effect to navbar*/
+.scrolled {
+  border-bottom-left-radius: 30%;
+  border-bottom-right-radius: 30%;
+}
+
+/*section related to the song, 42vh with background settings*/
+.section {
+  height: 42vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+/*add background image (gif) for specific parts of sections*/
+.section1 {
+  margin-top: 15vh;
+  background-image: url('../image/run.gif');
+  overflow: auto;
+}
+
+.section3 {
+  background-image: url('../image/rain.gif')
+}
+
+.section5 {
+  background-image: url('../image/gravity.gif');
+}
+
+/*div of 42vh for different verses of the lyrics, custom font, shadow and size*/
+.verse{
+  height: 42vh;
+  width: 100%;
+  display: table;
+  font-family: silent; 
+  font-size: 32px;
+  text-align: center;
+  color: rgb(165, 188, 223);
+  background-color: rgba(0, 0, 0, 0.781);
+  text-shadow: 2px 3px 2px rgba(25, 37, 55, 1);
+}
+
+.verse > * {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/*add layer as background color for each different verse of the lyrics*/
+.verse1{
+  background-color: rgba(27, 26, 22, 0.85);
+}
+.verse2{
+  background-color: rgb(32, 28, 28);
+}
+.verse3{
+  background-color: rgba(0, 0, 0, 0.781);
+}
+.verse4{
+  background-color: rgb(32, 28, 32);
+}
+.verse5{
+  background-color: rgba(27, 26, 22, 0.82);
+}
+
+/*add custom font and color to specific verse of the lyrics */
+.verse2, .verse4{
+  font-family: note;
+  font-weight: lighter;
+  color: rgb(156, 155, 197);
+  font-size: 32px;
+  text-shadow: 5px 5px rgb(46, 44, 63); 
+}
+
+/*add echo effect to the word "alone" on verse 4, using html span*/
+.echo{
+  text-shadow: 10px 4px 1px rgba(100, 223, 217, 0.1),
+  15px -8px 1px rgba(73, 100, 223, 0.1),
+  50px -14px 1px rgba(60, 168, 230, 0.1),
+  15px 8px 1px rgba(108, 72, 207, 0.1),
+  40px 14px 1px rgba(100, 223, 217, 0.06),
+  120px 0px 1px rgba(100, 223, 217, 0.06),
+  80px -10px 1px rgba(108, 72, 207, 0.1),
+  80px 8px 1px rgba(108, 72, 207, 0.1);
+}
+
+/*add fade effect to the words on verse 5, using html span */
+.fade0{
+  color: rgba(136, 158, 192, 0.973);
+  text-shadow: none;
+}
+.fade1{
+  color: rgba(136, 158, 192, 0.671);
+  text-shadow: none;
+}
+.fade2{
+  color: rgba(136, 158, 192, 0.401);
+  text-shadow: none;
+}
+.fade3{
+  color: rgba(136, 158, 192, 0.310);
+  text-shadow: none;
+}
+.fade4{
+  color: rgba(136, 158, 192, 0.191);
+  text-shadow: none;
+}
+.fade5{
+  color: rgba(179, 196, 224, 0.1);
+  text-shadow: none;
+}
+
+/*footer setting*/
+.section-footer{
+  height: 100%;
+  width: 33.33%;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/*add settings to div inside footer*/
+.div-footer {
+  padding: 30px;
+  font-family: spotify;
+  font-weight: bold;
+  color: rgb(179, 161, 161);
+}
+
+/*settings to how links on footer will work, no decoration, change color on hover*/
+a{
+  text-decoration: none;
+  color: rgb(247, 243, 243);
+}
+a:hover{
+  color: rgb(211, 149, 134);
+  transition: 0.3s;
+}
