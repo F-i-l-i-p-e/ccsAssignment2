@@ -129,7 +129,42 @@ nav {
   text-shadow: 5px 5px rgb(46, 44, 63); 
 }
 
-/*add echo effect to the word "alone" on verse 4, using html span*/
+/*add effect to the words "yesrerday", using html span*/
+.yesterday{
+  text-shadow: -2px 4px 1px rgba(118, 121, 165, 0.35),
+  -6px 8px 1px rgba(118, 121, 165, 0.27),
+  -12px 12px 1px rgba(118, 121, 165, 0.2);
+  
+}
+/*add effect to the words "deluded", using html span*/
+.deluded{
+  text-shadow: 1px 1px 1px rgb(101, 100, 148),
+  -1px -1px 1px rgb(101, 100, 148),
+  -1px 1px 1px rgb(101, 100, 148),
+  1px -1px 1px rgb(101, 100, 148);
+  color: rgb(177, 197, 180);
+}
+/*add effect to the words "one more today", using html span*/
+.day{
+  text-shadow: 0px 4px 5px rgba(160, 132, 91, 0.5),
+  0px 6px 5px rgba(160, 132, 91, 0.3),
+  0px 8px 5px rgba(160, 132, 91, 0.1),
+  0px -4px 5px rgba(160, 132, 91, 0.5),
+  0px -6px 5px rgba(160, 132, 91, 0.3),
+  0px -8px 5px rgba(160, 132, 91, 0.1);
+}
+
+/*add effect to the word "calling", using html span*/
+.call{
+  text-shadow: 0px 4px 1px rgba(118, 121, 165, 0.5),
+  0px 12px 1px rgba(118, 121, 165, 0.3),
+  0px 19px 1px rgba(118, 121, 165, 0.1),
+  0px -4px 1px rgba(118, 121, 165, 0.5),
+  0px -12px 1px rgba(118, 121, 165, 0.3),
+  0px -19px 1px rgba(118, 121, 165, 0.1);
+}
+
+/*add echo effect to the word "alone", using html span*/
 .echo{
   text-shadow: 10px 4px 1px rgba(100, 223, 217, 0.1),
   15px -8px 1px rgba(73, 100, 223, 0.1),
@@ -138,10 +173,18 @@ nav {
   40px 14px 1px rgba(100, 223, 217, 0.06),
   120px 0px 1px rgba(100, 223, 217, 0.06),
   80px -10px 1px rgba(108, 72, 207, 0.1),
-  80px 8px 1px rgba(108, 72, 207, 0.1);
+  80px 8px 1px rgba(108, 72, 207, 0.1),
+  -10px 4px 1px rgba(100, 223, 217, 0.1),
+  -15px -8px 1px rgba(73, 100, 223, 0.1),
+  -50px -14px 1px rgba(60, 168, 230, 0.1),
+  -15px 8px 1px rgba(108, 72, 207, 0.1),
+  -40px 14px 1px rgba(100, 223, 217, 0.06),
+  -120px 0px 1px rgba(100, 223, 217, 0.06),
+  -80px -10px 1px rgba(108, 72, 207, 0.1),
+  -80px 8px 1px rgba(108, 72, 207, 0.1);
 }
 
-/*add fade effect to the words on verse 5, using html span */
+/*add fade effect to the words "I feel the gravity of it all", using html span */
 .fade0{
   color: rgba(136, 158, 192, 0.973);
   text-shadow: none;
